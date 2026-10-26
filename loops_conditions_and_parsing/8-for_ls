@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Display filenames without the prefix before the first dash
+for file in *
+do
+    echo "${file#*-}"
+done
