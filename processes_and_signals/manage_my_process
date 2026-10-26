@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# Continuously write a message every two seconds
 while true; do
     echo "I am alive!" >> /tmp/my_process
     sleep 2
