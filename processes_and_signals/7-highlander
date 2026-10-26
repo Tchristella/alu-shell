@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Display a message and handle SIGTERM
 trap 'echo "I am invincible!!!"' SIGTERM
 
 while true; do
