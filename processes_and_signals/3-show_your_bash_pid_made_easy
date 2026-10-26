@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Display PIDs and names of processes containing bash
+for file in /proc/[0-9]*/comm; do
+    if grep -qi '^bash$' "$file"; then
+        pid=${file#/proc/}
+        pid=${pid%/comm}
+        echo "$pid bash"
+    fi
+done
