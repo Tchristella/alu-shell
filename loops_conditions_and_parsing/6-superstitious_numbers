@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Display superstitious numbers and their messages
 i=1
 while [ "$i" -le 20 ]
 do
